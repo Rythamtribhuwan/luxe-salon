@@ -1,6 +1,232 @@
-<h1>
-Hello Codingwale
-</h1>
+<!DOCTYPE html>
 
-<a href="about.html">About Page</a>
-<a href="Contact.html">Contact Page</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Salon | Home</title>
+
+```
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #fffaf7;
+        color: #2d2523;
+    }
+
+    header {
+        background: #2d2523;
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: #e8c9a8;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #e8c9a8;
+    }
+
+    .hero {
+        min-height: 72vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px 20px;
+        background: linear-gradient(135deg, #fffaf7, #f3dfcc);
+    }
+
+    .hero-content {
+        max-width: 800px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+        color: #b8865b;
+    }
+
+    .hero p {
+        font-size: 19px;
+        line-height: 1.7;
+        color: #655a55;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 14px 30px;
+        margin: 7px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .primary {
+        background: #2d2523;
+        color: white;
+    }
+
+    .secondary {
+        border: 2px solid #2d2523;
+        color: #2d2523;
+    }
+
+    .services {
+        padding: 70px 8%;
+        text-align: center;
+    }
+
+    .services h2 {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 280px;
+        padding: 35px 25px;
+        background: white;
+        border-radius: 18px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+        color: #b8865b;
+        margin-bottom: 15px;
+    }
+
+    .card p {
+        color: #6b605b;
+        line-height: 1.6;
+    }
+
+    footer {
+        background: #2d2523;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    @media (max-width: 700px) {
+        header {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav a {
+            margin: 0 8px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LUXE SALON</div>
+
+```
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Contact.html">Contact</a>
+</nav>
+```
+
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to <span>Luxe Salon</span></h1>
+
+```
+    <p>
+        Experience beauty, elegance and relaxation
+        at Luxe Salon. Our professional services are
+        designed to make you feel confident and refreshed.
+    </p>
+
+    <a href="about.html" class="btn primary">About Us</a>
+    <a href="Contact.html" class="btn secondary">Contact Us</a>
+</div>
+```
+
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+
+```
+<div class="cards">
+
+    <div class="card">
+        <h3>Hair Styling</h3>
+        <p>
+            Professional styling and hair care
+            for your perfect look.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Beauty Care</h3>
+        <p>
+            Relaxing beauty treatments designed
+            for your comfort and confidence.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Makeup</h3>
+        <p>
+            Elegant makeup services for special
+            occasions and everyday looks.
+        </p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<footer>
+    <p>© 2026 Luxe Salon | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
