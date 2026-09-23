@@ -15,129 +15,199 @@
     }
 
     body {
-        font-family: Arial, sans-serif;
-        background: #fffaf7;
-        color: #2d2523;
+        font-family: Georgia, "Times New Roman", serif;
+        background: #fdf8f2;
+        color: #211b18;
     }
 
+    /* NAVBAR */
     header {
-        background: #2d2523;
-        padding: 20px 8%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        padding: 22px 7%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background: rgba(25, 20, 17, 0.78);
     }
 
     .logo {
-        color: #e8c9a8;
-        font-size: 28px;
+        color: #f2d29b;
+        font-size: 29px;
         font-weight: bold;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
+    }
+
+    .tagline {
+        color: #d8c5a7;
+        font-size: 10px;
+        letter-spacing: 4px;
+        margin-top: 4px;
     }
 
     nav a {
         color: white;
         text-decoration: none;
-        margin-left: 25px;
-        font-weight: bold;
+        margin-left: 35px;
+        font-size: 17px;
+        transition: 0.3s;
     }
 
-    nav a:hover {
-        color: #e8c9a8;
+    nav a:hover,
+    nav a.active {
+        color: #f2d29b;
     }
 
+    /* HERO */
     .hero {
-        min-height: 72vh;
+        min-height: 720px;
         display: flex;
-        justify-content: center;
         align-items: center;
-        text-align: center;
-        padding: 50px 20px;
-        background: linear-gradient(135deg, #fffaf7, #f3dfcc);
+        position: relative;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(20, 15, 12, 0.88),
+                rgba(20, 15, 12, 0.52),
+                rgba(20, 15, 12, 0.15)
+            ),
+            url("salon-bg.jpg") center/cover no-repeat;
     }
 
     .hero-content {
-        max-width: 800px;
+        width: 55%;
+        margin-left: 9%;
+        padding-top: 70px;
+        color: white;
     }
 
-    .hero h1 {
-        font-size: 60px;
+    .small-title {
+        color: #f2d29b;
+        font-size: 15px;
+        letter-spacing: 5px;
         margin-bottom: 20px;
     }
 
+    .hero h1 {
+        font-size: 72px;
+        line-height: 1.05;
+        font-weight: normal;
+        margin-bottom: 25px;
+    }
+
     .hero h1 span {
-        color: #b8865b;
+        color: #f2d29b;
     }
 
     .hero p {
-        font-size: 19px;
+        max-width: 620px;
+        font-size: 20px;
         line-height: 1.7;
-        color: #655a55;
-        margin-bottom: 30px;
+        color: #f2eee8;
+        margin-bottom: 35px;
     }
 
     .btn {
         display: inline-block;
-        padding: 14px 30px;
-        margin: 7px;
+        padding: 15px 30px;
         border-radius: 30px;
         text-decoration: none;
-        font-weight: bold;
+        margin-right: 12px;
+        font-size: 16px;
+        transition: 0.3s;
     }
 
     .primary {
-        background: #2d2523;
-        color: white;
+        background: #f2d29b;
+        color: #211b18;
     }
 
     .secondary {
-        border: 2px solid #2d2523;
-        color: #2d2523;
+        border: 1px solid #f2d29b;
+        color: white;
     }
 
+    .btn:hover {
+        transform: translateY(-3px);
+    }
+
+    /* SERVICES */
     .services {
-        padding: 70px 8%;
+        padding: 80px 7%;
         text-align: center;
     }
 
+    .section-small {
+        color: #b8864c;
+        letter-spacing: 5px;
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
     .services h2 {
-        font-size: 38px;
-        margin-bottom: 40px;
+        font-size: 48px;
+        font-weight: normal;
+        margin-bottom: 55px;
     }
 
     .cards {
         display: flex;
         justify-content: center;
-        gap: 25px;
+        gap: 30px;
         flex-wrap: wrap;
     }
 
     .card {
-        width: 280px;
+        width: 250px;
         padding: 35px 25px;
-        background: white;
-        border-radius: 18px;
-        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(40, 25, 15, 0.08);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+    }
+
+    .icon {
+        width: 65px;
+        height: 65px;
+        margin: auto;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        background: #f5eadc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 29px;
     }
 
     .card h3 {
-        color: #b8865b;
-        margin-bottom: 15px;
+        font-size: 22px;
+        margin-bottom: 12px;
     }
 
     .card p {
-        color: #6b605b;
+        color: #70655e;
         line-height: 1.6;
     }
 
+    /* FOOTER */
     footer {
-        background: #2d2523;
-        color: white;
+        background: #211b18;
+        color: #ddd;
         text-align: center;
-        padding: 25px;
+        padding: 28px;
     }
 
-    @media (max-width: 700px) {
+    /* MOBILE */
+    @media (max-width: 800px) {
+
         header {
             flex-direction: column;
             gap: 15px;
@@ -145,10 +215,34 @@
 
         nav a {
             margin: 0 8px;
+            font-size: 14px;
+        }
+
+        .hero {
+            min-height: 680px;
+        }
+
+        .hero-content {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
         }
 
         .hero h1 {
-            font-size: 42px;
+            font-size: 48px;
+        }
+
+        .hero p {
+            font-size: 17px;
+        }
+
+        .btn {
+            margin: 5px;
+        }
+
+        .services h2 {
+            font-size: 38px;
         }
     }
 </style>
@@ -158,64 +252,106 @@
 
 <body>
 
+<!-- NAVIGATION -->
+
 <header>
-    <div class="logo">LUXE SALON</div>
 
 ```
+<div>
+    <div class="logo">LUXE SALON</div>
+    <div class="tagline">BEAUTY • STYLE • YOU</div>
+</div>
+
 <nav>
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
+    <a href="#services">Services</a>
     <a href="Contact.html">Contact</a>
 </nav>
 ```
 
 </header>
 
+<!-- HERO -->
+
 <section class="hero">
-    <div class="hero-content">
-        <h1>Welcome to <span>Luxe Salon</span></h1>
 
 ```
+<div class="hero-content">
+
+    <div class="small-title">
+        PREMIUM BEAUTY & HAIR SALON
+    </div>
+
+    <h1>
+        Welcome to<br>
+        <span>Luxe Salon</span>
+    </h1>
+
     <p>
-        Experience beauty, elegance and relaxation
-        at Luxe Salon. Our professional services are
-        designed to make you feel confident and refreshed.
+        Where beauty meets elegance. Experience premium
+        salon services in a relaxing and luxurious atmosphere.
     </p>
 
-    <a href="about.html" class="btn primary">About Us</a>
-    <a href="Contact.html" class="btn secondary">Contact Us</a>
+    <a href="Contact.html" class="btn primary">
+        Book Appointment →
+    </a>
+
+    <a href="#services" class="btn secondary">
+        Explore Services →
+    </a>
+
 </div>
 ```
 
 </section>
 
-<section class="services">
-    <h2>Our Services</h2>
+<!-- SERVICES -->
+
+<section class="services" id="services">
 
 ```
+<div class="section-small">
+    OUR SERVICES
+</div>
+
+<h2>Services We Provide</h2>
+
 <div class="cards">
 
     <div class="card">
+        <div class="icon">✂</div>
         <h3>Hair Styling</h3>
         <p>
-            Professional styling and hair care
+            Trendy cuts, styling and hair care
             for your perfect look.
         </p>
     </div>
 
     <div class="card">
+        <div class="icon">✨</div>
         <h3>Beauty Care</h3>
         <p>
-            Relaxing beauty treatments designed
-            for your comfort and confidence.
+            Relaxing beauty treatments for
+            healthy and glowing skin.
         </p>
     </div>
 
     <div class="card">
+        <div class="icon">💄</div>
         <h3>Makeup</h3>
         <p>
-            Elegant makeup services for special
-            occasions and everyday looks.
+            Elegant makeup for special occasions
+            and everyday looks.
+        </p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🌸</div>
+        <h3>Spa & Wellness</h3>
+        <p>
+            Rejuvenate your mind and body
+            with our relaxing services.
         </p>
     </div>
 
@@ -223,6 +359,8 @@
 ```
 
 </section>
+
+<!-- FOOTER -->
 
 <footer>
     <p>© 2026 Luxe Salon | All Rights Reserved</p>
